@@ -1,13 +1,13 @@
-import setuptools
+from setuptools import setup, find_packages  # type: ignore
 
 with open("README.md") as readme:
     long_description = readme.read()
 
 
-setuptools.setup(
+setup(
     name='torch-quick',
     version='0.0.1',
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
     url='https://github.com/Pranav5956/torch-quick',
     license='License',
     author='Pranav Balaji',
